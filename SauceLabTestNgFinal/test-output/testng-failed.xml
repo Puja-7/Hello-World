@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="TestBase.Listeners"/>
+  </listeners>
+  <test name="chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestsScripts.InvalidLoginTest">
+        <parameter name="password" value="oibhbj"/>
+        <parameter name="username" value="standard_user"/>
+        <methods>
+          <include name="InvalidLogin" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="getUrl"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- TestsScripts.InvalidLoginTest -->
+      <class name="TestsScripts.ValidLoginTest">
+        <parameter name="password" value="oibhbj"/>
+        <parameter name="username" value="standard_user"/>
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="getUrl"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- TestsScripts.ValidLoginTest -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+  <test name="firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestsScripts.InvalidLoginTest">
+        <parameter name="password" value="oibhbj"/>
+        <parameter name="username" value="standard_user"/>
+        <methods>
+          <include name="InvalidLogin" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="getUrl"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- TestsScripts.InvalidLoginTest -->
+      <class name="TestsScripts.ValidLoginTest">
+        <parameter name="password" value="oibhbj"/>
+        <parameter name="username" value="standard_user"/>
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="getUrl"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- TestsScripts.ValidLoginTest -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

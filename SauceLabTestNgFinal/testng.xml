@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  parallel="tests"  name="Suite">
+<listeners>
+<listener class-name="TestBase.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="chrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="TestsScripts.InvalidLoginTest">
+      <parameter name="username" value="standard_user"></parameter>
+      <parameter name="password" value="oibhbj"></parameter>
+      </class>
+      <class name="TestsScripts.ValidLoginTest">
+     
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="firefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="TestsScripts.InvalidLoginTest">
+      <parameter name="username" value="standard_user"></parameter>
+      <parameter name="password" value="oibhbj"></parameter>
+      </class>
+      <class name="TestsScripts.ValidLoginTest">
+     
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

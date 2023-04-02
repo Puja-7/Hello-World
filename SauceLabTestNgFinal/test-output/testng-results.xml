@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20219" started-at="2023-04-02T11:19:08Z" finished-at="2023-04-02T11:19:28Z">
+    <groups>
+    </groups>
+    <test name="chrome" duration-ms="12182" started-at="2023-04-02T11:19:08Z" finished-at="2023-04-02T11:19:20Z">
+      <class name="TestsScripts.ValidLoginTest">
+        <test-method status="PASS" signature="getUrl(java.lang.String)[pri:0, instance:TestsScripts.ValidLoginTest@156b88f5]" name="getUrl" is-config="true" duration-ms="3776" started-at="2023-04-02T16:49:15Z" finished-at="2023-04-02T16:49:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="PASS" signature="ValidLogin()[pri:0, instance:TestsScripts.ValidLoginTest@156b88f5]" name="ValidLogin" duration-ms="613" started-at="2023-04-02T16:49:19Z" finished-at="2023-04-02T16:49:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method status="PASS" signature="validateThanksMessage()[pri:0, instance:TestsScripts.ValidLoginTest@156b88f5]" name="validateThanksMessage" duration-ms="894" started-at="2023-04-02T16:49:19Z" depends-on-methods="TestsScripts.ValidLoginTest.ValidLogin" finished-at="2023-04-02T16:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateThanksMessage -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@156b88f5]" name="close" is-config="true" duration-ms="225" started-at="2023-04-02T16:49:20Z" finished-at="2023-04-02T16:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestsScripts.ValidLoginTest -->
+      <class name="TestsScripts.InvalidLoginTest">
+        <test-method status="PASS" signature="getUrl(java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@25084a1e]" name="getUrl" is-config="true" duration-ms="5569" started-at="2023-04-02T16:49:08Z" finished-at="2023-04-02T16:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="FAIL" signature="InvalidLogin(java.lang.String, java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@25084a1e]" name="InvalidLogin" duration-ms="671" started-at="2023-04-02T16:49:14Z" finished-at="2023-04-02T16:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[oibhbj]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TestsScripts.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.InvalidLoginTest@25084a1e]" name="close" is-config="true" duration-ms="139" started-at="2023-04-02T16:49:15Z" finished-at="2023-04-02T16:49:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestsScripts.InvalidLoginTest -->
+    </test> <!-- chrome -->
+    <test name="firefox" duration-ms="20219" started-at="2023-04-02T11:19:08Z" finished-at="2023-04-02T11:19:28Z">
+      <class name="TestsScripts.ValidLoginTest">
+        <test-method status="PASS" signature="getUrl(java.lang.String)[pri:0, instance:TestsScripts.ValidLoginTest@3f6b0be5]" name="getUrl" is-config="true" duration-ms="6024" started-at="2023-04-02T16:49:19Z" finished-at="2023-04-02T16:49:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="PASS" signature="ValidLogin()[pri:0, instance:TestsScripts.ValidLoginTest@3f6b0be5]" name="ValidLogin" duration-ms="573" started-at="2023-04-02T16:49:25Z" finished-at="2023-04-02T16:49:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method status="PASS" signature="validateThanksMessage()[pri:0, instance:TestsScripts.ValidLoginTest@3f6b0be5]" name="validateThanksMessage" duration-ms="1581" started-at="2023-04-02T16:49:26Z" depends-on-methods="TestsScripts.ValidLoginTest.ValidLogin" finished-at="2023-04-02T16:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateThanksMessage -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@3f6b0be5]" name="close" is-config="true" duration-ms="863" started-at="2023-04-02T16:49:27Z" finished-at="2023-04-02T16:49:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestsScripts.ValidLoginTest -->
+      <class name="TestsScripts.InvalidLoginTest">
+        <test-method status="PASS" signature="getUrl(java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@3b6ddd1d]" name="getUrl" is-config="true" duration-ms="8650" started-at="2023-04-02T16:49:08Z" finished-at="2023-04-02T16:49:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="FAIL" signature="InvalidLogin(java.lang.String, java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@3b6ddd1d]" name="InvalidLogin" duration-ms="727" started-at="2023-04-02T16:49:17Z" finished-at="2023-04-02T16:49:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[oibhbj]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at TestsScripts.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.InvalidLoginTest@3b6ddd1d]" name="close" is-config="true" duration-ms="1564" started-at="2023-04-02T16:49:18Z" finished-at="2023-04-02T16:49:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestsScripts.InvalidLoginTest -->
+    </test> <!-- firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
