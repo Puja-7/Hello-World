@@ -1,0 +1,1 @@
+hello this is TestNg Project used parallel testing,cross browser and pushed code to github next step is pending i.e. integrate jenkins.
