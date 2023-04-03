@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21814" started-at="2023-04-03T08:30:42Z" finished-at="2023-04-03T08:31:04Z">
+  <suite name="Suite" duration-ms="37157" started-at="2023-04-03T12:01:55Z" finished-at="2023-04-03T12:02:32Z">
     <groups>
     </groups>
-    <test name="chrome" duration-ms="21814" started-at="2023-04-03T08:30:42Z" finished-at="2023-04-03T08:31:04Z">
+    <test name="chrome" duration-ms="37157" started-at="2023-04-03T12:01:55Z" finished-at="2023-04-03T12:02:32Z">
       <class name="TestsScripts.ValidLoginTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="getUrl" is-config="true" duration-ms="4190" started-at="2023-04-03T14:00:43Z" finished-at="2023-04-03T14:00:47Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="getUrl" is-config="true" duration-ms="12072" started-at="2023-04-03T17:31:58Z" finished-at="2023-04-03T17:32:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="ValidLogin1(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestsScripts.ValidLoginTest@5562c41e]" name="ValidLogin1" duration-ms="6972" started-at="2023-04-03T14:00:47Z" data-provider="ValidLogin" finished-at="2023-04-03T14:00:54Z">
+        <test-method status="PASS" signature="ValidLogin1(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestsScripts.ValidLoginTest@5562c41e]" name="ValidLogin1" duration-ms="10405" started-at="2023-04-03T17:32:10Z" data-provider="ValidLogin" finished-at="2023-04-03T17:32:20Z">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin1 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="close" is-config="true" duration-ms="233" started-at="2023-04-03T14:00:54Z" finished-at="2023-04-03T14:00:54Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="close" is-config="true" duration-ms="840" started-at="2023-04-03T17:32:20Z" finished-at="2023-04-03T17:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="getUrl" is-config="true" duration-ms="3405" started-at="2023-04-03T14:00:54Z" finished-at="2023-04-03T14:00:57Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="getUrl" is-config="true" duration-ms="3921" started-at="2023-04-03T17:32:21Z" finished-at="2023-04-03T17:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="ValidLogin1(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestsScripts.ValidLoginTest@5562c41e]" name="ValidLogin1" duration-ms="6164" started-at="2023-04-03T14:00:57Z" data-provider="ValidLogin" finished-at="2023-04-03T14:01:04Z">
+        <test-method status="PASS" signature="ValidLogin1(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestsScripts.ValidLoginTest@5562c41e]" name="ValidLogin1" duration-ms="6922" started-at="2023-04-03T17:32:25Z" data-provider="ValidLogin" finished-at="2023-04-03T17:32:32Z">
           <params>
             <param index="0">
               <value>
@@ -61,17 +61,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin1 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="close" is-config="true" duration-ms="148" started-at="2023-04-03T14:01:04Z" finished-at="2023-04-03T14:01:04Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.ValidLoginTest@5562c41e]" name="close" is-config="true" duration-ms="192" started-at="2023-04-03T17:32:32Z" finished-at="2023-04-03T17:32:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- TestsScripts.ValidLoginTest -->
       <class name="TestsScripts.InvalidLoginTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="getUrl" is-config="true" duration-ms="4874" started-at="2023-04-03T14:00:42Z" finished-at="2023-04-03T14:00:47Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="getUrl" is-config="true" duration-ms="14715" started-at="2023-04-03T17:31:55Z" finished-at="2023-04-03T17:32:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="InvalidLogin(java.lang.String, java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="InvalidLogin" duration-ms="854" started-at="2023-04-03T14:00:47Z" finished-at="2023-04-03T14:00:48Z">
+        <test-method status="PASS" signature="InvalidLogin(java.lang.String, java.lang.String)[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="InvalidLogin" duration-ms="2863" started-at="2023-04-03T17:32:10Z" finished-at="2023-04-03T17:32:13Z">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLogin -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="close" is-config="true" duration-ms="513" started-at="2023-04-03T14:00:48Z" finished-at="2023-04-03T14:00:48Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:TestsScripts.InvalidLoginTest@53fdffa1]" name="close" is-config="true" duration-ms="715" started-at="2023-04-03T17:32:13Z" finished-at="2023-04-03T17:32:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

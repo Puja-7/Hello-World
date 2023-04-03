@@ -18,5 +18,11 @@ public class InvalidLoginTest extends TestBase{
 		System.out.println("************88Login Url: "+loginurl);
 		Assert.assertEquals(loginurl,"https://www.saucedemo.com/","LoginUrl Validation Failed");
 	}
+	
+	@Test
+	public void zmavenEx()
+	{
+		System.out.println("running maven from cmd prompt example........");
+	}
 
 }
