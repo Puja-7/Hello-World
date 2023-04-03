@@ -49,14 +49,20 @@ try {
 		}
 		return prop;
 	}
-	public WebDriver driverInit(String browser) //Driver initialization
+	public WebDriver driverInit() //Driver initialization
 	{
-		
-		if(browser.equalsIgnoreCase("chrome"))
+		String browsername;
+		if(System.getProperty("Browser")!=null)
+		{
+			browsername=System.getProperty("Browser");
+		}
+		else
+			browsername=getProp().getProperty("Browser");
+		if(browsername.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();			
 		}
-		else if(browser.equalsIgnoreCase("firefox"))
+		else if(browsername.equalsIgnoreCase("firefox"))
 		{
 			driver=new FirefoxDriver();
 	
@@ -75,7 +81,7 @@ try {
 	public LoginPage getUrl()   ///GET url......
 	{
 		String url=getProp().getProperty("Url");
-		driver=driverInit("chrome");
+		driver=driverInit();
 		login=new LoginPage(driver);
 		driver.manage().window().maximize();
 				driver.get(url);
