@@ -16,7 +16,7 @@ public class InvalidLoginTest extends TestBase{
 		login.clickonInvalidLogin();
 		String loginurl=login.getLoginUrl();
 		System.out.println("************88Login Url: "+loginurl);
-		Assert.assertEquals(loginurl,"https://www.saucedemo1.com/","LoginUrl Validation Failed");
+		Assert.assertEquals(loginurl,"https://www.saucedemo.com/","LoginUrl Validation Failed");
 	}
 
 }

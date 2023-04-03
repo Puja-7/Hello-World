@@ -2,11 +2,18 @@ package TestBase;
 
 import java.io.File;
 import java.io.FileInputStream;
-
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.DataFormat;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -62,19 +70,19 @@ try {
 	
 	
 	
-	@BeforeClass(alwaysRun=true)
-	@Parameters({"browser"})
-	public LoginPage getUrl(String browser)   ///GET url......
+	@BeforeMethod(alwaysRun=true)
+	//@Parameters({"browser"})
+	public LoginPage getUrl()   ///GET url......
 	{
 		String url=getProp().getProperty("Url");
-		driver=driverInit(browser);
+		driver=driverInit("chrome");
 		login=new LoginPage(driver);
 		driver.manage().window().maximize();
 				driver.get(url);
 		return login;
 	}
 	
-	@AfterClass(alwaysRun=true)
+	@AfterMethod(alwaysRun=true)
 	public void close()
 	{
 		driver.close();
@@ -88,6 +96,28 @@ try {
 		File dest=new File(path);
 		FileUtils.copyFile(src, dest);
 		return path;
+	}
+	
+	public Object[][] GetExcelData(String path) throws IOException,FileNotFoundException
+	{
+		DataFormatter format=new DataFormatter();
+		FileInputStream fis=new FileInputStream(path);
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		XSSFSheet sheet= workbook.getSheet("Sheet1");
+		int rowCount=sheet.getPhysicalNumberOfRows();
+		XSSFRow row=sheet.getRow(0);
+		int colCount=row.getLastCellNum();
+		Object[][] data=new Object[rowCount-1][colCount];
+		for(int i=0;i<rowCount-1;i++)
+		{
+			row=sheet.getRow(i+1);
+			for(int j=0;j<colCount;j++)
+			{
+				XSSFCell cell=row.getCell(j);
+				data[i][j]=format.formatCellValue(cell);
+			}
+		}
+		return data;
 	}
 
 }

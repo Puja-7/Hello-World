@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,26 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.InvalidLoginTest" hash-for-method="InvalidLogin(standard_user, oibhbj)">InvalidLogin(standard_user, oibhbj)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.InvalidLoginTest" hash-for-method="InvalidLogin(standard_user, oibhbj)">InvalidLogin(standard_user, oibhbj)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,22 +101,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.InvalidLoginTest" hash-for-method="InvalidLogin(standard_user, oibhbj)">InvalidLogin(standard_user, oibhbj)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="ValidLogin1(standard_user, secret_sauce, Sauce Labs Backpack)">ValidLogin1(standard_user, secret_sauce, Sauce Labs Backpack)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="validateThanksMessage">validateThanksMessage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="validateThanksMessage">validateThanksMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestsScripts.ValidLoginTest" hash-for-method="ValidLogin1(standard_user, secret_sauce, Sauce Labs Onesie)">ValidLogin1(standard_user, secret_sauce, Sauce Labs Onesie)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -150,9 +126,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">TestsScripts.ValidLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLogin1(standard_user, secret_sauce, Sauce Labs Backpack)">
+                  </a> <!-- ValidLogin1(standard_user, secret_sauce, Sauce Labs Backpack) -->
+                  <span class="method-name">ValidLogin1</span>
+                  <span class="parameters">(standard_user, secret_sauce, Sauce Labs Backpack)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLogin1(standard_user, secret_sauce, Sauce Labs Onesie)">
+                  </a> <!-- ValidLogin1(standard_user, secret_sauce, Sauce Labs Onesie) -->
+                  <span class="method-name">ValidLogin1</span>
+                  <span class="parameters">(standard_user, secret_sauce, Sauce Labs Onesie)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TestsScripts.InvalidLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,66 +162,6 @@
                   </a> <!-- InvalidLogin(standard_user, oibhbj) -->
                   <span class="method-name">InvalidLogin</span>
                   <span class="parameters">(standard_user, oibhbj)</span>
-                  <div class="stack-trace">java.lang.AssertionError: LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]
-	at TestsScripts.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:19)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="InvalidLogin(standard_user, oibhbj)">
-                  </a> <!-- InvalidLogin(standard_user, oibhbj) -->
-                  <span class="method-name">InvalidLogin</span>
-                  <span class="parameters">(standard_user, oibhbj)</span>
-                  <div class="stack-trace">java.lang.AssertionError: LoginUrl Validation Failed expected [https://www.saucedemo1.com/] but found [https://www.saucedemo.com/]
-	at TestsScripts.InvalidLoginTest.InvalidLogin(InvalidLoginTest.java:19)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestsScripts.ValidLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidLogin">
-                  </a> <!-- ValidLogin -->
-                  <span class="method-name">ValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidLogin">
-                  </a> <!-- ValidLogin -->
-                  <span class="method-name">ValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateThanksMessage">
-                  </a> <!-- validateThanksMessage -->
-                  <span class="method-name">validateThanksMessage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateThanksMessage">
-                  </a> <!-- validateThanksMessage -->
-                  <span class="method-name">validateThanksMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,12 +175,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;TestBase.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;chrome&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestsScripts.InvalidLoginTest&quot;&gt;
         &lt;parameter name=&quot;password&quot; value=&quot;oibhbj&quot;/&gt;
@@ -249,16 +188,6 @@
       &lt;class name=&quot;TestsScripts.ValidLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chrome --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;firefox&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;TestsScripts.InvalidLoginTest&quot;&gt;
-        &lt;parameter name=&quot;password&quot; value=&quot;oibhbj&quot;/&gt;
-        &lt;parameter name=&quot;username&quot; value=&quot;standard_user&quot;/&gt;
-      &lt;/class&gt; &lt;!-- TestsScripts.InvalidLoginTest --&gt;
-      &lt;class name=&quot;TestsScripts.ValidLoginTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- firefox --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,9 +200,6 @@
             <ul>
               <li>
                 <span class="test-name">chrome (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">firefox (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,36 +225,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateThanksMessage')
+data.setCell(0, 1, 'ValidLogin1')
 data.setCell(0, 2, 'TestsScripts.ValidLoginTest')
-data.setCell(0, 3, 1581);
+data.setCell(0, 3, 6972);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateThanksMessage')
+data.setCell(1, 1, 'ValidLogin1')
 data.setCell(1, 2, 'TestsScripts.ValidLoginTest')
-data.setCell(1, 3, 894);
+data.setCell(1, 3, 6164);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'InvalidLogin')
 data.setCell(2, 2, 'TestsScripts.InvalidLoginTest')
-data.setCell(2, 3, 727);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'InvalidLogin')
-data.setCell(3, 2, 'TestsScripts.InvalidLoginTest')
-data.setCell(3, 3, 671);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ValidLogin')
-data.setCell(4, 2, 'TestsScripts.ValidLoginTest')
-data.setCell(4, 3, 613);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ValidLogin')
-data.setCell(5, 2, 'TestsScripts.ValidLoginTest')
-data.setCell(5, 3, 573);
+data.setCell(2, 3, 854);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -355,75 +269,57 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestsScripts.InvalidLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">getUrl(chrome)</span>
+              <div class="configuration-method before">
+                <span class="method-name">getUrl</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">getUrl(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">InvalidLogin(standard_user, oibhbj)</span>
-                <span class="method-start">5573 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">6510 ms</span>
-              </div> <!-- configuration-class after -->
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestsScripts.ValidLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">getUrl(chrome)</span>
-                <span class="method-start">6649 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">getUrl</span>
+                <span class="method-start">684 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestsScripts.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">InvalidLogin(standard_user, oibhbj)</span>
-                <span class="method-start">8650 ms</span>
+                <span class="method-start">4874 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">9593 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestsScripts.ValidLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">ValidLogin</span>
-                <span class="method-start">10426 ms</span>
+                <span class="method-name">ValidLogin1(standard_user, secret_sauce, Sauce Labs Backpack)</span>
+                <span class="method-start">4885 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateThanksMessage</span>
-                <span class="method-start">11039 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class before">
-                <span class="method-name">getUrl(firefox)</span>
-                <span class="method-start">11157 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestsScripts.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">11941 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="test-method">
-                <span class="method-name">ValidLogin</span>
-                <span class="method-start">17181 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateThanksMessage</span>
-                <span class="method-start">17756 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
+                <span class="method-start">5745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestsScripts.ValidLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">19340 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">11857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getUrl</span>
+                <span class="method-start">12090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidLogin1(standard_user, secret_sauce, Sauce Labs Onesie)</span>
+                <span class="method-start">15495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">21666 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

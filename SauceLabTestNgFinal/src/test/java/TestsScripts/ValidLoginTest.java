@@ -1,6 +1,10 @@
 package TestsScripts;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -22,23 +26,23 @@ public class ValidLoginTest extends TestBase{
 	Checkout2 check2;
 	FinalPage finalpage;
 	
-	@Test
-	
-	public void ValidLogin()
+	@DataProvider(name="ValidLogin")
+	public Object[][] getData() throws IOException, Exception
 	{
-		login.EnterLoginDetails("standard_user","secret_sauce");
-	home=	login.clickOnValidLoginBtn();
+		return GetExcelData("D:\\UdemyWorkspace\\SauceLabTestNgFinal\\src\\main\\resources\\SauceLabValidLogin.xlsx");
+	}
+	@Test(dataProvider="ValidLogin",priority=1)
+	public void ValidLogin1(String uname,String pwd,String product)
+	{
+		login.EnterLoginDetails(uname,pwd);
+		home=login.clickOnValidLoginBtn();
 		String currenturl=home.getHomeUrl();
 		System.out.println("**************Home Url: "+currenturl);
 		Assert.assertEquals(currenturl, "https://www.saucedemo.com/inventory.html","Home Url Validation Failed..");
 		
-		}
-	
-	@Test(dependsOnMethods="ValidLogin")
-	public void validateThanksMessage()
-	{
-		selectProduct=home.selectCorrectItem("Sauce Labs Backpack");
-	cart=selectProduct.addToCartGoToCart();
+		
+		cart=home.selectCorrectItem(product);
+		//cart=selectProduct.addToCartGoToCart();
 	
 		check1=cart.clickOnCheckOut();
 		check2=check1.clickonContinue("Puja", "Mitkari", "411020");

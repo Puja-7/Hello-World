@@ -5,8 +5,9 @@
     <classes>
       <class name="TestsScripts.ValidLoginTest">
         <methods>
-          <include name="ValidLogin"/>
-          <include name="validateThanksMessage"/>
+          <include name="ValidLogin1" invocation-numbers="1"/>
+          <include name="close"/>
+          <include name="getUrl"/>
         </methods>
       </class> <!-- TestsScripts.ValidLoginTest -->
     </classes>
